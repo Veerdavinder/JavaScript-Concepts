@@ -61,6 +61,63 @@ This is obviously false. However, if we run the same equation with loose equalit
 
 We get `true`? Why is this? It has to do with **falsy** values in JavaScript.
 
+## Falsy Values
+
+Okay,so why does `false == 0` in JavaScript. It's complex, but it's because in JavaScript `0` is a **falsy** value.
+
+Type coercion will actually our zero into a false boolean, then `false` is equal to `false`.
+
+There are only **six falsy values** in JavaScript you should be aware of:
+
+-`false` -- boolean false <br>
+-`0` -- number zero
+-`""`-- empty string
+-`null`
+-`undefined`
+-`NaN` -- Not A Number
+
+## Falsy Value Comparison
+
+The following you can consider to be ‘rules’ of falsy values. These are things you should ultimately memorize if you will be working with JavaScript often.
+
+1. `false`, `0`, and `""`
+
+When comparing any of our first three falsy values with loose equality, they will always be equal! That’s because these values will all coerce into a `false` boolean.
+
+`false == 0`<br>
+`// true`<br>
+
+`0 == ""`<br>
+`// true`<br>
+
+`"" == false`<br>
+`// true`<br>
+
+2. `null` and `undefined`
+
+When comparing `null` and `undefined`, they are only equal to themselves and each other:
+
+`null == null`<br>
+`// true`<br>
+
+`undefined == undefined`<br>
+`// true`<br>
 
 
+`null == undefined`<br>
+`// true`<br>
 
+If you try to compare `null` to any other value, it will return `false`.
+
+3. `NaN`
+
+Lastly, `NaN` is not equivalent to anything. Even cooler, it’s not even itself!
+
+`NaN == null`<br>
+`// false`<br>
+
+`NaN == undefined`<br>
+`// false`<br>
+
+`NaN == NaN`<br>
+`// false`<br>
