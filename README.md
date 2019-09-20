@@ -72,9 +72,9 @@ There are only **six falsy values** in JavaScript you should be aware of:
 1. `false` -- boolean false <br>
 2. `0` -- number zero<br>
 3. `""`-- empty string<br>
-4. -`null`<br>
-5. -`undefined`<br>
-6. -`NaN` -- Not A Number<br>
+4. `null`<br>
+5. `undefined`<br>
+6. `NaN` -- Not A Number<br>
 
 ## Falsy Value Comparison
 
